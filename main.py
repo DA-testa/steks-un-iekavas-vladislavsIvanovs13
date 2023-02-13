@@ -22,6 +22,8 @@ def find_mismatch(text):
                 return 1
             if are_matching(opening_brackets_stack[-1], next):
                 opening_brackets_stack.pop()
+                if not (len(text) - 1 == i)
+                    continue
                 if (len(opening_brackets_stack) != 0):
                     return len(text)
             else:
