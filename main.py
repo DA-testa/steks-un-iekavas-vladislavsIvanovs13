@@ -24,7 +24,7 @@ def find_mismatch(text):
                 opening_brackets_stack.pop()
                 if not (len(text) - 1 == i):
                     continue
-                if (len(opening_brackets_stack) not == 0):
+                if not (len(opening_brackets_stack) == 0):
                     return len(text)
             else:
                 return i+1
@@ -33,7 +33,7 @@ def find_mismatch(text):
 def main():
     text = input()
     mismatch = find_mismatch(text)
-    if (mismatch not == None):
+    if not (mismatch == None):
         print(mismatch)
     else:
         print("Success")
