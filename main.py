@@ -33,6 +33,7 @@ def find_mismatch(text):
 def main():
     letter = input()
     if letter == "I":
+        print("positive")
         text = input()
         mismatch = find_mismatch(text)
         if not (mismatch == None):
