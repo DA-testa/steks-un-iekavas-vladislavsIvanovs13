@@ -31,12 +31,14 @@ def find_mismatch(text):
 
 
 def main():
-    text = input()
-    mismatch = find_mismatch(text)
-    if not (mismatch == None):
-        print(mismatch)
-    else:
-        print("Success")
+    letter = input()
+    if letter == I:
+        text = input()
+        mismatch = find_mismatch(text)
+        if not (mismatch == None):
+            print(mismatch)
+        else:
+            print("Success")
 
 
 if __name__ == "__main__":
